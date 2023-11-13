@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    /*color del cuerpo*/
+    body{
+        background-color: blue;
+    }
+    
+    /*encabezado*/
+    .encabezado{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    }
+    
+    .logo{
+    width: 100%;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    float: left;
+    padding-left: 20px;
+    }
+    
+    nav{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    float: left;
+    text-align: center;
+    padding-top: 24px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    }
+    
+    nav ul li{
+        display: inline;
+    }
+    
+    nav ul li a{
+    color: blue;
+    font-size: 40px;
+    text-decoration: none;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: font-size 0.3s ease-in-out;
+    }
+    
+    nav ul li a:hover{
+    color: white;
+    background-color: blue;
+    font-size: 50px;
+    }
+    
+    /*carrusel*/
+    .carrusel{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    }
+    
+    .slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    }
+    
+    .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    
+    .slide.active{
+        opacity: 1;
+    }
+    
+    @keyframes carruselAnimation{
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
+    }
+    
+    /* cuerpo de la pagina */
+    .cuerpo{
+    width: 100%;
+    height: 1200px;
+    background-color: blue;
+    }
+    
+    .titulo {
+      width: 100%;
+      height: 100px;
+      background-color: blue;
+      display: flex;
+    }    
+        
+    .titulo-noticia1 {
+      width: 50%;
+      height: 100px;
+      background-color: white;
+      display: flex;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    
+    .titulo-noticia1 h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 1px;
+      color: blue;
+      margin: 0;
+    }
+    
+    .apartado1 {
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+      display: flex;
+    }
+    
+    .bloque1 {
+      width: 75%;
+      height: 600px;
+      overflow: hidden;
+    }
+    
+    .bloque1 h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: white;
+      margin-left: 10px;
+    }
+    
+    .bloque1 p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14.5px;
+      font-weight: bold;
+      text-align: justify;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    
+.apartado1 p{
+  margin-bottom: 15px;
+}
+
+    .apartado1 img {
+      float: right;
+      margin-top: 10px;
+      max-width: 100%;
+    }    
+    
+    .titulo {
+      width: 100%;
+      height: 100px;
+      background-color: blue;
+      display: flex;
+    }
+    
+    .titulo-gallery {
+      width: 50%;
+      height: 100px;
+      display: flex;
+      background-color: white;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    margin: 50px;
+    }
+    
+    .titulo-gallery h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 50px;
+      color: blue;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+    
+    .gallery {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      overflow: hidden;
+    flex-wrap: wrap;
+    }
+    
+    .image {
+      width: 25%;
+      height: 50%;
+      box-sizing: border-box;
+      padding: 5px;
+    }
+    
+    .image img {
+      width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    
+    .image h3 {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    }
+    
+    .image img:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* pie de la pagina */
+    .pie-pagina{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    }
+    
+    .titulo-pie{
+    width: 30%;
+    height: 100px;
+    display: flex;
+    background-color: blue;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    }
+    
+    .titulo-pie h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    }
+    
+    .pie-pagina nav {
+      width: 100%;
+      height: 100px;
+      background-color: white;
+      text-align: center;
+      padding-top: 40px;
+      box-sizing: border-box;
+      text-transform: uppercase;
+    flex-grow: 1;
+    }
+    
+    .pie-pagina nav ul{
+    display: inline-block;
+    padding: 0;
+    }
+    
+    .pie-pagina nav ul li {
+      display: inline-block ;
+    }
+    
+    .pie-pagina nav ul li a {
+      font-size: 20px; /* Reducí el tamaño de fuente para que se ajuste mejor */
+      text-decoration: none;
+      padding-left: 15px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .pie-pagina nav ul li a[href="https://www.facebook.com/adivica.cabrero"] {
+      color: blue;
+    }
+    
+    .pie-pagina nav ul li a[href="mailto:adivica.cabrero@gmail.com"] {
+      color: red;
+    }
+    
+    .pie-pagina nav ul li a[href="https://www.facebook.com/adivica.cabrero"]:hover {
+      background-color: blue;
+      color: white;
+    }
+    
+    .pie-pagina nav ul li a[href="mailto:adivica.cabrero@gmail.com"]:hover {
+      background-color: red;
+      color: white;
+    }
+    
+    @media only screen and (max-width: 600px) {
+
+      .encabezado {
+        height: 70px;
+      }
+    
+      .logo,
+      nav {
+        height: 70px;
+      }
+    
+      nav ul li a {
+        font-size: 14px;
+        padding-left: 10px;
+      }
+    
+      /* Carrusel */
+      .carrusel {
+        height: 200px;
+      }
+    
+      /* cuerpo de la pagina */
+      .cuerpo {
+        width: 100%;
+        height: 1500px;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .titulo {
+        width: 100%;
+        height: 100px;
+        background-color: blue;
+        display: flex;
+      }    
+          
+      .titulo-noticia1 {
+        width: 50%;
+        height: 100px;
+        background-color: white;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+      
+      .titulo-noticia1 h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        color: blue;
+        margin: 0;
+      }
+      
+      .apartado1 {
+        width: 100%;
+        height: 1000px;
+        overflow: hidden;
+        display: flex;
+      flex-direction: column;
+      }
+      
+      .bloque1 {
+        width: 100%;
+        height: 1500px;
+        overflow: hidden;
+      }
+      
+      .bloque1 h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 5px;
+        font-weight: bold;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        margin-left: 10px;
+      }
+      
+      .bloque1 p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: justify;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        color: white;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 15px;
+      }
+      
+  .apartado1 p{
+    margin-bottom: 15px;
+  }
+  
+      .apartado1 img {
+        float: right;
+        margin-top: 10px;
+        max-width: 100%;
+      }    
+      
+      .titulo {
+        width: 100%;
+        height: 100px;
+        background-color: blue;
+        display: flex;
+      }
+      
+      .titulo-gallery {
+        width: 50%;
+        height: 100px;
+        display: flex;
+        background-color: white;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      margin: 50px;
+      }
+      
+      .titulo-gallery h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: blue;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 0;
+      }
+      
+      .gallery {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        overflow: hidden;
+      flex-wrap: wrap;
+    flex-direction: row;  
+    }
+      
+      .image {
+        width: 25%;
+        height: 50%;
+        box-sizing: border-box;
+        padding: 5px;
+      }
+      
+      .image img {
+        width: 100%;
+      height: auto;
+      object-fit: cover;
+      }
+      
+      .image h3 {
+        margin-top: 10px;
+        font-size: 5px;
+        font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      }
+      
+      .image img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+    /* pie de la pagina */
+    .pie-pagina {
+      width: 100%;
+      height: 100px;
+      background-color: white;
+      display: flex;
+    }
+    
+    .titulo-pie {
+      width: 30%;
+      height: 100px;
+      display: flex;
+      background-color: blue;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    
+    .titulo-pie h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+    }
+    
+    .pie-pagina nav {
+      width: 100%;
+      height: 100px;
+      background-color: white;
+      text-align: center;
+      padding-top: 40px;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      flex-grow: 1;
+    }
+    
+    .pie-pagina nav ul {
+      display: inline-block;
+      padding: 0;
+    }
+    
+    .pie-pagina nav ul li {
+      display: inline-block;
+    }
+    
+    .pie-pagina nav ul li a {
+      font-size: 20px;
+      /* Reducí el tamaño de fuente para que se ajuste mejor */
+      text-decoration: none;
+      padding-left: 15px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .pie-pagina nav ul li a[href="https://www.facebook.com/adivica.cabrero"] {
+      color: blue;
+    }
+    
+    .pie-pagina nav ul li a[href="mailto:adivica.cabrero@gmail.com"] {
+      color: red;
+    }
+    
+    .pie-pagina nav ul li a[href="https://www.facebook.com/adivica.cabrero"]:hover {
+      background-color: blue;
+      color: white;
+    }
+    
+    .pie-pagina nav ul li a[href="mailto:adivica.cabrero@gmail.com"]:hover {
+      background-color: red;
+      color: white;
+    }
+    
+
+
