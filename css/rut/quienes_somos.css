@@ -164,11 +164,15 @@ float: left;
   font-size: 15px;
   font-weight: bold;
   text-align: justify;
-  text-transform: capitalize;
+  text-transform: lowercase;
   letter-spacing: 1px;
   line-height: 1.5;
   color: white;
   margin-left: 20px;
+}
+
+p::first-letter {
+  text-transform: uppercase;
 }
 
 .apartado1 img,
@@ -368,13 +372,17 @@ flex-direction: column;
     font-size: 10px;
     font-weight: bold;
     text-align: justify;
-    text-transform: capitalize;
+    text-transform: lowercase;
     letter-spacing: 1px;
     line-height: 1.5;
     color: white;
     margin-left: 20px;
   }
   
+  p::first-letter {
+    text-transform: uppercase;
+  }
+
   .apartado1 img,
   .apartado2 img,
   .apartado3 img {
@@ -464,5 +472,3 @@ flex-direction: column;
   background-color: red;
   color: white;
 }
-
-                                                                                                                        

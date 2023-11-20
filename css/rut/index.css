@@ -191,6 +191,10 @@ nav ul li a:hover {
   line-height: 1.5;
 }
 
+p::first-letter {
+  text-transform: uppercase;
+}
+
 .bloque1,
 .bloque3 img {
   float: right;
@@ -421,6 +425,10 @@ nav ul li a:hover {
     margin-left: 58px;
     float: left;
     line-height: 1.5;
+  }
+
+  p::first-letter {
+    text-transform: uppercase;
   }
 
   .bloque1 img,

@@ -154,7 +154,7 @@
       font-size: 14.5px;
       font-weight: bold;
       text-align: justify;
-      text-transform: capitalize;
+      text-transform: lowercase;
       letter-spacing: 1px;
       line-height: 1.5;
       color: white;
@@ -163,6 +163,11 @@
     margin-right: 10px;
     }
     
+
+    p::first-letter {
+      text-transform: uppercase;
+    }
+
 .apartado1 p{
   margin-bottom: 15px;
 }
@@ -404,7 +409,7 @@
         font-size: 10px;
         font-weight: bold;
         text-align: justify;
-        text-transform: capitalize;
+        text-transform: lowercase;
         letter-spacing: 1px;
         line-height: 1.5;
         color: white;
@@ -412,7 +417,11 @@
       margin-left: 10px;
       margin-right: 15px;
       }
-      
+
+      p::first-letter {
+        text-transform: uppercase;
+      }
+
   .apartado1 p{
     margin-bottom: 15px;
   }

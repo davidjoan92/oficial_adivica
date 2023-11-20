@@ -156,13 +156,17 @@ margin: 50px;
   font-size: 15px;
   font-weight: bold;
   text-align: justify;
-  text-transform: capitalize;
+  text-transform: lowercase;
   letter-spacing: 1px;
   line-height: 1.5;
   color: white;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 15px;
+}
+
+p::first-letter {
+  text-transform: uppercase;
 }
 
 .image {
@@ -345,7 +349,7 @@ border-radius: 100%;
     font-size: 10px;
     font-weight: bold;
     text-align: justify;
-    text-transform: capitalize;
+    text-transform: lowercase;
     letter-spacing: 1px;
     line-height: 1.5;
     color: white;
@@ -354,6 +358,10 @@ border-radius: 100%;
     margin-right: 15px;
   }
   
+  p::first-letter {
+    text-transform: uppercase;
+  }
+
   .image {
   
     width: 75%;
