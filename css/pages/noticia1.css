@@ -243,6 +243,54 @@
       transition: transform 0.3s ease-in-out;
     }
 
+    /* compartir */
+.compartir {
+  width: 100%;
+  height: 100px;
+  background-color: yellow;
+  display: flex;
+}
+
+.titulo-compartir {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  background-color: yellow;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.titulo-compartir h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 50px;
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.btn-compartir {
+  width: 30%;
+  height: 100px;
+float: left;
+padding-top: 35px;
+}
+
+.btn-compartir a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+    
     /* pie de la pagina */
     .pie-pagina{
     width: 100%;
@@ -498,7 +546,57 @@
         transition: transform 0.3s ease-in-out;
       }
 
-    /* pie de la pagina */
+    /* compartir */
+.compartir {
+  width: 100%;
+  height: 100px;
+  background-color: yellow;
+  display: flex;
+}
+
+.titulo-compartir {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  background-color: yellow;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.titulo-compartir h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.btn-compartir {
+  width: 30%;
+  height: 100px;
+float: left;
+padding-top: 35px;
+padding-left: 30px;
+}
+
+.btn-compartir a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+      /* pie de la pagina */
     .pie-pagina {
       width: 100%;
       height: 100px;
