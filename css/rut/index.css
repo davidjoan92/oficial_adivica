@@ -1,38 +1,57 @@
 * {
-  margin: 0;
   padding: 0;
+margin: 0;
 }
 
-/*color del cuerpo*/
+/* color del body */
 body {
   background-color: blue;
+padding: 0;
+margin: 0;  
 }
 
-/*encabezado*/
-.encabezado {
-  width: 100%;
-  height: 100px;
-  background-color: white;
+/* encabezado */
+.contenedor-encabezado {
+width: 100%;
+height: 100px;
+display: flex;
 }
 
-.logo {
-  width: 100%;
-  height: 100px;
-  border-radius: 100%;
-  display: flex;
-  float: left;
-  padding-left: 20px;
+.contenedor-logo {
+width: 20%;
+height: 100px;
+display: flex;
+float: left;
+background-color: white;
 }
 
+.contenedor-titulo-principal {
+width: 80%;
+height: 100px;
+display: flex;
+background-color: white;
+text-align: center;
+float: left;
+align-items: center;
+}
+
+.contenedor-titulo-principal h1 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 40px;
+font-weight: bold;
+color: blue;
+letter-spacing: 1px;
+}
+
+/* menu de navegación */
 nav {
-  width: 100%;
-  height: 100px;
-  background-color: white;
-  float: left;
-  text-align: center;
-  padding-top: 24px;
-  box-sizing: border-box;
-  text-transform: uppercase;
+width: 100%;
+height: 100px;
+background-color: lightblue;
+text-align: center;
+padding-top: 24px;
+box-sizing: border-box;
+text-transform: uppercase;
 }
 
 nav ul li {
@@ -40,42 +59,42 @@ nav ul li {
 }
 
 nav ul li a {
-  color: blue;
-  font-size: 40px;
-  text-decoration: none;
-  padding-left: 15px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-family: Arial, Helvetica, sans-serif;
-  transition: font-size 0.3s ease-in-out;
+color: blue;
+font-size: 50px;
+text-decoration: none;
+padding-left: 15px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 1px;
+transition: font-size 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: white;
-  background-color: blue;
-  font-size: 50px;
+color: lightblue;
+background-color: blue;
+font-size: 60px;
 }
 
-/*carrusel*/
-.carrusel {
-  width: 100%;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
+/* carrusel */
+.contenedor-carrusel {
+width: 100%;
+height: 400px;
+position: relative;
+overflow: hidden;
 }
 
 .slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+width: 100%;
+height: 100%;
+position: absolute;
+opacity: 0;
+transition: opacity 1s ease-in-out;
 }
 
 .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
 .slide.active {
@@ -83,158 +102,132 @@ nav ul li a:hover {
 }
 
 @keyframes carruselAnimation {
-  0% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 1;
-  }
-
-  75% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
+0% {
+  opacity: 0;
 }
 
-/* cuerpo de la pagina */
-.cuerpo {
-  width: 100%;
-  height: 1000px;
-  background-color: blue;
+25% {
+  opacity: 1;
 }
 
-.apartado1,
-.apartado2 {
-  width: 100%;
-  height: 500px;
-  display: flex;
+75% {
+  opacity: 1;
 }
 
-.bloque1,
-.bloque3 {
-  width: 75%;
-  height: 500px;
-  float: left;
-  overflow: hidden;
-  display: flex;
+100% {
+  opacity: 0;
+}
 }
 
-.bloque2,
-.bloque4 {
-  width: 25%;
-  height: 500px;
-  float: right;
-  margin-left: auto;
+/* articulos */
+a {
+text-decoration: none;
 }
 
-.apartado1 h1,
-.apartado1 p,
-.apartado2 h1,
-.apartado2 p {
-  width: 75%;
-  /* Establece el ancho del 75% para los títulos y párrafos */
-  float: left;
-  /* Hace que los elementos floten a la izquierda */
+.contenedor-articulos {
+width: 1650px;
+display: flex;
 }
 
-.apartado1 img,
-.apartado2 img {
-  width: 25%;
-  /* Establece el ancho del 25% para las imágenes */
-  float: right;
-  /* Hace que las imágenes floten a la derecha */
+.contenedor-articulo1,
+.contenedor-articulo2 {
+width: 800px;
+height: 400px;
+display: flex;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: blue;
 }
 
-
-.bloque1 h1,
-.bloque2 h1,
-.bloque3 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: left;
-  color: white;
-  margin-left: 10px;
+.contenedor-articulo1 h2,
+.contenedor-articulo2 h2 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 40px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 1px;
+float: left;
+color: white;
 }
 
-.bloque3 h1 {
-  margin-left: 55px;
+.contenedor-articulo1 img,
+.contenedor-articulo2 img {
+max-width: 50%;
+height: auto;
+object-fit: cover;
+float: right;
 }
 
-.bloque1 p {
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: justify;
-  letter-spacing: 1px;
-  color: white;
-  margin-left: 10px;
-  float: left;
-  line-height: 1.5;
+.contenedor-secundario {
+display: flex;
+width: 1650px;
+border: 2px solid white;
 }
 
-.bloque3 p {
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: justify;
-  letter-spacing: 1px;
-  color: white;
-  margin-left: 58px;
-  float: left;
-  line-height: 1.5;
+.contenedor-fiesta,
+.contenedor-actividades {
+width: 800px;
+height: 400px;
+margin: 10px;
+align-items: center;
 }
 
-p::first-letter {
-  text-transform: uppercase;
+.contenedor-fiesta {
+background-color: white;
+border: 2px solid red;
 }
 
-.bloque1,
-.bloque3 img {
-  float: right;
-  margin-left: 50px;
-  margin-right: 50px;
-  max-width: 100%;
+.contenedor-actividades {
+background-color: yellow;
+border: 2px solid blue;
 }
 
-.bloque2 {
-  background-color: yellow;
+.contenedor-fiesta h1,
+.contenedor-actividades h1 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 1px;
 }
 
-.bloque2 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: blue;
+.contenedor-fiesta h1 {
+color: red;
+float: left;
 }
 
-.bloque4 img {
-  width: 100%;
-  height: auto;
+.contenedor-actividades h1 {
+color: blue;
 }
 
-.bloque1 a,
-.bloque2 a,
-.bloque3 a,
-.bloque4 a {
-  text-decoration: none;
-  color: white;
+.contenedor-fiesta img {
+max-width: 50%;
+height: auto;
+object-fit: cover;
+float: right;
 }
 
-.bloque1:hover,
-.bloque2:hover,
-.bloque3:hover,
-.bloque4:hover {
-  transform: translate(-10px, -10px);
+.contenedor-articulo1:hover,
+.contenedor-articulo2:hover {
+background-color: white;
+}
+
+.contenedor-fiesta:hover {
+background-color: lightblue;
+border: 2px solid white;
+}
+
+.contenedor-actividades:hover {
+background-color: lightblue;
+}
+
+.contenedor-articulo1 h2:hover,
+.contenedor-articulo2 h2:hover,
+.contenedor-fiesta h1:hover,
+.contenedor-actividades h1:hover {
+color: blue;
 }
 
 /* compartir */
@@ -287,245 +280,301 @@ padding-top: 35px;
 
 /* pie de la pagina */
 .pie-pagina {
-  width: 100%;
-  height: 100px;
-  background-color: white;
-  display: flex;
+width: 100%;
+height: 100px;
+background-color: white;
+display: flex;
 }
 
 .titulo-pie {
-  width: 30%;
-  height: 100px;
-  display: flex;
-  background-color: blue;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+width: 30%;
+height: 100px;
+display: flex;
+background-color: blue;
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+margin: 0;
 }
 
 .titulo-pie h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 90px;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  text-align: center;
-  margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 90px;
+color: white;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: bold;
+text-align: center;
+margin: 0;
 }
 
 .pie-pagina nav {
-  width: 100%;
-  height: 100px;
-  background-color: white;
-  text-align: center;
-  padding-top: 40px;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  flex-grow: 1;
+width: 100%;
+height: 100px;
+background-color: white;
+text-align: center;
+padding-top: 40px;
+box-sizing: border-box;
+text-transform: uppercase;
+flex-grow: 1;
 }
 
 .pie-pagina nav ul {
-  display: inline-block;
-  padding: 0;
+display: inline-block;
+padding: 0;
 }
 
 .pie-pagina nav ul li {
-  display: inline-block;
+display: inline-block;
 }
 
 .pie-pagina nav ul li a {
-  font-size: 20px;
-  /* Reducí el tamaño de fuente para que se ajuste mejor */
-  text-decoration: none;
-  padding-left: 15px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+/* Reducí el tamaño de fuente para que se ajuste mejor */
+text-decoration: none;
+padding-left: 15px;
+font-weight: bold;
+letter-spacing: 1px;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .pie-pagina nav ul li a[href="https://www.facebook.com/adivica.cabrero"] {
-  color: blue;
+color: blue;
 }
 
 .pie-pagina nav ul li a[href="mailto:adivica.cabrero@gmail.com"] {
-  color: red;
+color: red;
 }
 
 .pie-pagina nav ul li a[href="https://www.facebook.com/adivica.cabrero"]:hover {
-  background-color: blue;
-  color: white;
+background-color: blue;
+color: white;
 }
 
 .pie-pagina nav ul li a[href="mailto:adivica.cabrero@gmail.com"]:hover {
-  background-color: red;
-  color: white;
+background-color: red;
+color: white;
 }
 
+/* Dispositivos moviles */
 @media only screen and (max-width: 600px) {
-
-  .encabezado {
-    height: 70px;
-  }
-
-  .logo,
-  nav {
-    height: 70px;
-  }
-
-  nav ul li a {
-    font-size: 14px;
-    padding-left: 10px;
-  }
-
-  /* Carrusel */
-  .carrusel {
-    height: 200px;
-  }
-
-  /* cuerpo de la pagina */
-  .cuerpo {
-    width: 100%;
-    height: 1000px;
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .apartado1,
-  .apartado2 {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bloque1,
-  .bloque3 {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    display: flex;
-  }
-
-  .bloque2,
-  .bloque4 {
-    width: 100%;
-    height: 100px;
-  }
-
-  .apartado1 h1,
-  .apartado1 p,
-  .apartado2 h1,
-  .apartado2 p {
-    width: 75%;
-    /* Establece el ancho del 75% para los títulos y párrafos */
-    float: left;
-    /* Hace que los elementos floten a la izquierda */
-  }
-
-  .apartado1 img,
-  .apartado2 img {
-    width: 25%;
-    /* Establece el ancho del 25% para las imágenes */
-    float: right;
-    /* Hace que las imágenes floten a la derecha */
-  }
-
-
-  .bloque1 h1,
-  .bloque2 h1,
-  .bloque3 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: left;
-    color: white;
-    margin-left: 10px;
-  }
-
-  .bloque3 h1 {
-    margin-left: 55px;
-  }
-
-  .bloque1 p {
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: justify;
-    letter-spacing: 1px;
-    color: white;
-    margin-left: 10px;
-    float: left;
-    line-height: 1.5;
-  }
-
-  .bloque3 p {
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: justify;
-    letter-spacing: 1px;
-    color: white;
-    margin-left: 58px;
-    float: left;
-    line-height: 1.5;
-  }
-
-  p::first-letter {
-    text-transform: uppercase;
-  }
-
-  .bloque1 img,
-  .bloque3 img {
-    float: right;
-    margin-left: 50px;
-    margin-right: 50px;
-    max-width: 100%;
-  }
-
-  .bloque2 {
-    background-color: yellow;
-  text-align: center;
-  justify-content: center;
-
-  }
-
-  .bloque2 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: blue;
-  }
-
-  .bloque4 {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    border-radius: 100%;
-    margin-right: 90px;
-    margin-top: 10px;
-  }
-
-.bloque4 img {
-  width: 100%;
-  height: auto;
+/* encabezado */
+.contenedor-encabezado {
+width: 100%;
+height: 100px;
+display: flex;
 }
 
-  .bloque1 a,
-  .bloque2 a,
-  .bloque3 a,
-  .bloque4 a {
-    text-decoration: none;
-    color: white;
+.contenedor-logo {
+width: 30%;
+height: 100px;
+display: flex;
+float: left;
+background-color: white;
+}
+
+.contenedor-titulo-principal {
+width: 70%;
+height: 100px;
+display: flex;
+background-color: white;
+text-align: center;
+float: left;
+align-items: center;
+}
+
+.contenedor-titulo-principal h1 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: bold;
+color: blue;
+letter-spacing: 1px;
+}
+
+/* menu de navegación */
+nav {
+width: 100%;
+height: 100px;
+background-color: lightblue;
+text-align: center;
+padding-top: 24px;
+box-sizing: border-box;
+text-transform: uppercase;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+color: blue;
+font-size: 15px;
+text-decoration: none;
+padding-left: 15px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 1px;
+transition: font-size 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+color: lightblue;
+background-color: blue;
+font-size: 60px;
+}
+
+/* carrusel */
+.contenedor-carrusel {
+width: 100%;
+height: 400px;
+position: relative;
+overflow: hidden;
+}
+
+.slide {
+width: 100%;
+height: 100%;
+position: absolute;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+@keyframes carruselAnimation {
+  0% {
+    opacity: 0;
   }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* articulos */
+a {
+  text-decoration: none;
+}
+
+.contenedor-articulos {
+  width: 100%;
+display: flex;
+flex-direction: column;  
+}
+
+.contenedor-articulo1,
+.contenedor-articulo2 {
+  width: 300px;
+height: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: blue;
+}
+
+.contenedor-articulo1 h2,
+.contenedor-articulo2 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 1px;
+float: left;
+color: white;
+}
+
+.contenedor-articulo1 img,
+.contenedor-articulo2 img {
+  max-width: 50%;
+height: auto;
+object-fit: cover;
+float: right;
+}
+
+.contenedor-secundario {
+  display: flex;
+width: 300px;
+flex-direction: column;  
+}
+
+.contenedor-fiesta,
+.contenedor-actividades {
+  width: 300px;
+height: 200px;
+margin: 10px;
+}
+
+.contenedor-fiesta {
+  background-color: white;
+border: 2px solid red;
+}
+
+.contenedor-actividades {
+  background-color: yellow;
+border: 2px solid blue;
+}
+
+.contenedor-fiesta h1,
+.contenedor-actividades h1 {
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.contenedor-fiesta h1 {
+  color: red;
+float: left;
+}
+
+.contenedor-actividades h1 {
+  color: blue;
+}
+
+.contenedor-fiesta img {
+  max-width: 50%;
+height: auto;
+object-fit: cover;
+float: right;
+}
+
+.contenedor-articulo1:hover,
+.contenedor-articulo2:hover {
+  background-color: white;
+}
+
+.contenedor-fiesta:hover {
+  background-color: lightblue;
+}
+
+.contenedor-actividades:hover {
+  background-color: lightblue;
+}
+
+.contenedor-articulo1 h2:hover,
+.contenedor-articulo2 h2:hover,
+.contenedor-fiesta h1:hover,
+.contenedor-actividades h1:hover {
+  color: blue;
+}
 
 /* compartir */
 .compartir {
@@ -536,7 +585,7 @@ padding-top: 35px;
 }
 
 .titulo-compartir {
-  width: 30%;
+  width: 50%;
   height: 100px;
   display: flex;
   background-color: yellow;
@@ -558,16 +607,15 @@ padding-top: 35px;
 }
 
 .btn-compartir {
-  width: 30%;
+  width: 50%;
   height: 100px;
 float: left;
 padding-top: 35px;
-padding-left: 30px;
 }
 
 .btn-compartir a {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color: blue;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -576,7 +624,7 @@ padding-left: 30px;
   text-decoration: none;
 }
 
-  /* pie de la pagina */
+/* pie de la pagina */
 .pie-pagina {
   width: 100%;
   height: 100px;
@@ -597,7 +645,7 @@ padding-left: 30px;
 
 .titulo-pie h1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 25px;
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -627,7 +675,7 @@ padding-left: 30px;
 }
 
 .pie-pagina nav ul li a {
-  font-size: 20px;
+  font-size: 15px;
   /* Reducí el tamaño de fuente para que se ajuste mejor */
   text-decoration: none;
   padding-left: 15px;
@@ -652,4 +700,5 @@ padding-left: 30px;
 .pie-pagina nav ul li a[href="mailto:adivica.cabrero@gmail.com"]:hover {
   background-color: red;
   color: white;
+} 
 }
